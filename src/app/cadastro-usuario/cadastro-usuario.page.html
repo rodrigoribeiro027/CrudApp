@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cadastro de usuarios</ion-title>
+    <ion-button (click)="voltarLogin()" >Voltar</ion-button>
+  </ion-toolbar>
+</ion-header>
+<div class="container2">
+    <ion-item class="inputs">
+      <ion-label position="floating" >Nome Completo</ion-label>
+      <ion-input type="email"  name="email" required></ion-input>
+    </ion-item>
+    <ion-item class="inputs">
+      <ion-label position="floating" >Email</ion-label>
+      <ion-input type="email"  name="email" required></ion-input>
+    </ion-item>
+    <ion-item class="inputs">
+      <ion-label position="floating">idade</ion-label>
+      <ion-input type="number" required></ion-input>
+    </ion-item>
+    <ion-item class="inputs">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" name="password" required></ion-input>
+    </ion-item>
+    <ion-button class="botaoCadastro" (click)="cadastrarUsuario()">Cadastrar Pet</ion-button>
+</div>

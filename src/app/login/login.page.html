@@ -1,0 +1,22 @@
+
+  <ion-title size="large" class="titleStore">PetLovers</ion-title>
+  <div class="login-container">
+    <img src="../../assets/dog-bro.png" alt="Logo" class="login-logo">
+  </div>
+  <div class="container2">
+    <form >
+      <ion-item class="inputs">
+        <ion-label position="floating" >Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+    </form>
+  </div>
+  <ion-button class="botaoCadastro" (click)="login()">Logar</ion-button>
+  <ion-button class="botaoCadastro" (click)="cadastrarUsuario()">Cadastrar Usuario</ion-button>
+
+  
+  
